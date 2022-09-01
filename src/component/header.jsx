@@ -12,7 +12,7 @@ function dayDisplay() {
 }
 
 
-function Header({num}) {
+function Header() {
 
     const txt = useMemo(()=>{
         return dayDisplay()
@@ -23,9 +23,7 @@ function Header({num}) {
     <h1>{txt.date}</h1> 
     <h3 style={{color:"gray"}}>{txt.day}</h3> 
     </div>
-    <div>
-        남은 목표 : {num}
-    </div>
+
     <hr />
     </>
 
